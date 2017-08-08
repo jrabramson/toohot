@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background: #171313;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  background: black;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  font: bold 20vmax/1 sans-serif;
+  font-size: 22px;
+}
+
+.prompt {
+  padding: 30px 17.5%;
+  width: 100%;
+  height: 300px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  white-space: pre-line;
+}
+
+.distortion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: red;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s;
+}
+
+.reader {
+  display: block;
+  transition: opacity 1s;
+  opacity: 1;
+  padding-bottom: 17px;
+  border-bottom: 1px solid slategrey;
+}
+
+.reader.none {
+  opacity: 0;
+  border-bottom: none;
+}
+
+.reader.title {
+  font-size: 150px;
+  border-bottom: none;
+  background-image: url(flames.gif);
+  background-size: 75%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.choices {
+  padding: 30px 17.5%;
+  width: 100%;
+  height: 300px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.choice {
+  cursor: pointer;
+  transition: all 0.5s;
+  display: block;
+  margin: 10px 0;
+  opacity: 0;
+}
+
+.choice:hover {
+  color: yellow;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes readin {
+  from { height: 0px; }
+  to { height: 300px; }
+}

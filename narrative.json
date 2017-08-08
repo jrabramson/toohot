@@ -1,0 +1,130 @@
+{
+  "data": {
+    "none": {
+      "prompt": "",
+      "choices": [],
+      "outcomes": [],
+      "heat": 0
+    },
+    "title": {
+      "prompt": "TOO\nHOT",
+      "choices": ["Start"],
+      "outcomes": ["start"],
+      "heat": 0
+    },
+    "start": {
+      "prompt": "You squint as a bead of sweat runs into your eye, you suddenly realize how hot it is.\n\nYour legs are stuck to the leather couch in a way that makes you very unhappy. You raise your arm and see the dark spot in your armpit already forming.\n\nYou frown.\n\nYou realize you may have to do something about this. But your favourite episode is on right now.",
+      "choices": ["Get up", "Keep watching"],
+      "outcomes": ["up", "watch1"],
+      "heat": 1
+    },
+    "watch1": {
+      "prompt": "You can't miss this! This is the one where they release Man Ray!\n\nYou accept your fate as the leather and your skin are becoming one. A bit more TV can't hurt.\n\nThat said, it's still very very hot.",
+      "choices": ["Get up", "Keep watching"],
+      "outcomes": ["up", "watch2"],
+      "heat": 1
+    },
+    "watch2": {
+      "prompt": "Forget the heat, you're entertained and the episode is only half over.\n\nYou give up on your legs, maybe the couch will have better use for them.\n\nIs it getting hotter?",
+      "choices": ["Get up", "Keep watching"],
+      "outcomes": ["up", "watch3"],
+      "heat": 1
+    },
+    "watch3": {
+      "prompt": "You yawn, why does the heat make you so tired?\n\nYou look down at your shirt again and curse whoever invented pit stains.\n\n\"Five more minutes\", you tell yourself.",
+      "choices": ["Get up", "Keep watching"],
+      "outcomes": ["up", "watch4"],
+      "heat": 1
+    },
+    "watch4": {
+      "prompt": "Your eyes close, you think about how it's true that your other senses get hightened when you are blinded. Like the sense of how parched, tired, and sweaty you are.\n\nYou fall asleep, it's horrible. You're soaked from sweat and your mouth feels like it's glued shut.\n\nYou mumble something about regrets.",
+      "choices": ["Game Over"],
+      "outcomes": ["gameover"],
+      "heat": 1
+    },
+    "up": {
+      "prompt": "The noise of your legs and the leather seperating is as loud as it is unpleasant. You turn around and look at the leg shaped marks on the couch, maybe you were there a bit too long.\n\nYou congratulate yourself on standing, but it's still way too hot. Your cat is lying on the windowsill and is seemingly midway between solid and liquid.\n\nWhat now?",
+      "choices": ["Get changed", "Get a popsicle", "Go outside"],
+      "outcomes": ["changed1", "popsicle1", "outside1"],
+      "heat": 0
+    },
+    "changed1": {
+      "prompt": "Obviously freshening up will make you feel better. You head upstairs, two things catch your attention\n\nThe first is a pile of fresh laundry, the second is the shower.\n\nEither way, time to get naked.",
+      "choices": ["Grab some fresh laundry", "Take a cool shower", "Just get naked"],
+      "outcomes": ["changed2", "shower1", "naked1"],
+      "heat": 1
+    },
+    "changed2": {
+      "prompt": "You pick out a fresh white T and shorts, slip out of your now drenched attire, and don the fresh raiments.\n\nIt feels amazing.\n\nYou head back down, Mom blocks the way.",
+      "choices": ["\"Hey Mom, hot enough for ya?\""],
+      "outcomes": ["mom1"],
+      "heat": 0
+    },
+    "mom1": {
+      "prompt": "She rolls her eyes, \"At least you changed, come on, we're going to the mall\".\n\nYou prepare to object before remembering the mall has working AC. A sacrifice must be made for comfort.\n\nToday, that sacrifice is your dignity.",
+      "choices": ["Lets go shop with Mom"],
+      "outcomes": ["tbc"],
+      "heat": 0
+    },
+    "naked1": {
+      "prompt": "\"Clothes are the source of all problems.\" you think to yourself.\n\nYou peel the sweaty garments off your body and stretch out.\n\nYou then realize sitting naked in your room is boring.",
+      "choices": ["Grab some fresh laundry", "Take that cool shower"],
+      "outcomes": ["changed2", "shower1"],
+      "heat": 0
+    },
+    "shower1": {
+      "prompt": "Of course! The shower! You tear your clothes off and hop into the tub, pausing to flex in the mirror.\n\nYou carefully turn on a cold stream, and for a moment you're in paradise.\n\nThen you hear a flush from the bathroom downstairs and the water turns into magma.\n\nYou develop a lifelong fear of hygine.",
+      "choices": ["Game Over"],
+      "outcomes": ["gameover"],
+      "heat": 4
+    },
+    "popsicle1": {
+      "prompt": "The image of a icey cool popsicle flashes in your mind. You lick your parched lips.\n\nYou walk over to the kitchen and up to the freezer. Your skin tingles at the anticipation of the cold air.",
+      "choices": ["Get that juicy popsicle", "On second thought... "],
+      "outcomes": ["popsicle2", "choice2"],
+      "heat": 0
+    },
+    "popsicle2": {
+      "prompt": "You eagerly swing open the freezer, your eyes close as the wave of cool air washes over you.\n\nOr, it would have had the freezer not been broken for 4 months. Instead, a stench wave of hot rotten Totinos rolls over you. It's very unpleasant.",
+      "choices": ["Time for plan B"],
+      "outcomes": ["choice2"],
+      "heat": 2
+    },
+    "outside1": {
+      "prompt": "It can't be any worse right? Maybe that tree you like is casting a shadow today.\n\nYou walk down the hall to the front door and get your sneakers on.\n\nYou hesitate before grabbing the doorknob.",
+      "choices": ["Get out of this damn sauna house", "On second thought..."],
+      "outcomes": ["outside2", "choice1"],
+      "heat": 0
+    },
+    "outside2": {
+      "prompt": "You feel the heat coming off the knob before you grab it, but it's too late.\n\nAs your hand touches the knob your life flashes before your eyes.\n\n\"Ow!\" You say.",
+      "choices": ["Game Over"],
+      "outcomes": ["gameover"],
+      "heat": 4
+    },
+    "choice1": {
+      "prompt": "You must not be thinking clearly because of the heat.",
+      "choices": ["Get that cool, refeshing popsicle", "Change into some nice fresh clothes"],
+      "outcomes": ["popsicle1", "changed1"],
+      "heat": 0
+    },
+    "choice2": {
+      "prompt": "You must not be thinking clearly because of the heat.",
+      "choices": ["Get out of this house/sauna", "Change into some nice fresh clothes"],
+      "outcomes": ["outside1", "changed1"],
+      "heat": 0
+    },
+    "gameover": {
+      "prompt": "You manage one last thought before you give in to the heat,\n\n\"Pit... stains...\"\n\nBut its too late.",
+      "choices": ["Try Again"],
+      "outcomes": ["title"],
+      "heat": 1
+    },
+    "tbc": {
+      "prompt": "To Be Continued...",
+      "choices": ["Play Again?"],
+      "outcomes": ["title"],
+      "heat": 0
+    }
+  }
+}
